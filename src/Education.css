@@ -1,0 +1,77 @@
+.education-container {
+  position: absolute; 
+  top: 42%;
+  bottom: 31%; 
+  left: 50%; 
+  transform: translate(-48%, -110%);
+  margin-top: 4%;
+  padding: 20px;
+  max-width: 1200px;
+  color: #ffffffe1;
+  box-shadow: 
+    5px 5px 20px rgba(158, 11, 158, 0.5),    
+    -5px -5px 20px rgba(148, 158, 11, 0.5),  
+    7px -7px 20px rgba(107, 158, 11, 0.5);    
+}
+
+.section-title {
+  font-size: 54px;
+  margin-bottom: 81px;
+}
+
+.education-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.education-card {
+  background-color: #164c1e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.education-logo {
+  max-width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.education-details {
+  text-align: left;
+}
+
+.education-university {
+  color: #aabf4d;
+  font-size: 28px;
+  margin: 0;
+}
+
+.education-degree {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.education-date {
+  font-size: 19px;
+  margin: 5px 0;
+}
+
+.education-coursework-title {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.education-coursework-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.education-coursework-item {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
