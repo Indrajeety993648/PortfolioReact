@@ -9,10 +9,12 @@ import Skills from './Skills';
 import Contact from './Contact';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <Router>
+      <Navbar/>
         <div className="App">
         <Routes>
           <Route path="/about" element={<About />} />

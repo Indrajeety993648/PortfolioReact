@@ -43,20 +43,7 @@ const Portfolio = ({ text = "Developer", typingspeed = 320, deletingspeed = 50, 
 
   return (
     <div className="portfolio">
-      <div className="sticky-navbar">
-        <div className="left-corner">Indrajeet Yadav</div>
-        <nav className="nav right-corner">
-          <ul>
-            <li className="nav-item"><Link to="/">Home</Link></li>
-            <li className="nav-item"><Link to="/about">About</Link></li>
-            <li className="nav-item"><Link to="/education">Education</Link></li>
-            <li className="nav-item"><Link to="/experience">Experience</Link></li>
-            <li className="nav-item"><Link to="/projects">Projects</Link></li>
-            <li className="nav-item"><Link to="/skills">Skills</Link></li>
-            <li className="nav-item"><Link to="/contact">Contact</Link></li>
-          </ul>
-        </nav>
-      </div>
+      
       <div className="container">
         <h1 className={alternateColor ? 'red' : 'green'}>Indrajeet Yadav</h1>
         <p className="displayed-text">I'm <span className="dynamic-text">{displayedText}</span></p>
