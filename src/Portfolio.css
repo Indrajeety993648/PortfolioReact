@@ -7,8 +7,6 @@ body {
   /* display: flex; */
   align-items: center;
   height: 100%;   
-  background-image: url('/home/indrajeetyadav/reactfolder/src/assets/animation1.gif');
-  background-size: cover; /* Cover the entire background */
 }
 
 .div{
