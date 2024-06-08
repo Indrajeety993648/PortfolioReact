@@ -1,66 +1,105 @@
-body {
-  background-color: #0c0d16;
-  color: #ffffff;
-  font-family: 'Arial', sans-serif;
+.Contact1{
+  height: 150px;
+  width: 30rem;
+  padding-top: 25px;
+  margin-left: 15rem;
+  list-style-type: none;
+  background-color: #09203a;
+  text-decoration: none;
 }
-
-.contact-container {
-  max-width: 1200px;
-  margin-top: 10%;
-  margin-left: 33%;
-  padding: 20px;
-}
-
-.contact-container h1 {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  background: linear-gradient(to right, #ff7a00, #f94e4e, #0084ff, #b82525, #0066ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-.contact-content {
+.Contacts{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
 }
-
-.contact-item {
-  background-color: #161b22;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 10px;
-  flex-basis: 45%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.Contacts1{
+  display: flex
 }
-
-.contact-item h2 {
-  color: #86c232;
-  margin-bottom: 10px;
+.Contact1:hover,.Contact2:hover,.Contact3:hover,.Contact4:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1), 0 6px 20px rgba(135, 206, 235, 0.2);
+  transform: scale(1.05); /* Slightly scale up the box */
 }
-
-.contact-item p {
-  margin: 0;
+.Contact2{
+  height: 150px;
+  width: 30rem;
+  padding-top: 25px;
+  margin-left: 5rem;
+  list-style-type: none;
+  background-color: #09203a;
+  text-decoration: none;
 }
-
-.social-icons {
+#h3{
+  color: greenyellow;
+  margin-left: 24px;
+}
+#location{
+  height: 30px;
+  width: 30px;
+  margin-top: 13px;
+}
+#email,#phone{
+  height: 30px;
+  width: 30px;
+  padding-left: 35px;
+  margin-top: 14px;
+}
+#social{
+  height: 30px;
+  width: 30px;
+  margin-top: 14px;
+}
+.email,.contact,.Social{
   display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+}
+.locate{
+  display: flex;
+}
+.li{
+  margin-left: 3.2rem;
+}
+.lii{
+  margin-left: 5.2rem;
 }
 
-.social-icons a {
-  display: inline-block;
+.Contact3{
+  height: 150px;
+  width: 32.4rem;
+  padding-top: 25px;
+  margin-left: 15rem;
+  list-style-type: none;
+  background-color: #09203a;
+  text-decoration: none;
+}
+.Contact4{
+      height: 150px;
+      width: 32.4rem;
+      padding-top: 25px;
+      margin-left: 5rem;
+      list-style-type: none;
+      background-color: #09203a;
+      text-decoration: none;
+}
+#h4{
+  color: greenyellow;
+  margin-left: 24px;
+}
+#liii {
+  margin-bottom: 10px; 
+}
+#contact{
+  margin-left: 5.3rem;
+}
+#git{
+  height: 35px;
   width: 40px;
-  height: 40px;
+  margin-left: -13rem;
 }
-
-.social-icons img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+#Linked{
+  height: 35px;
+  width: 40px;
+  margin-left: 2rem;
+}
+#Google{
+  height: 35px;
+  width: 40px;
+  color: white;
+  margin-left: 2rem;
 }

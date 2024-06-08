@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './About.css';
-import Myimage from './Untitled.jpeg'
+import Myimage from './Untitled.jpeg';
+
 const About = () => {
+  const cursorRef = useRef(null);
+
+  useEffect(() => {
+    const cursor = cursorRef.current;
+
+    const handleMouseMove = (event) => {
+      cursor.style.left = `${event.clientX - 10}px`; // Adjust position to center the cursor on the pointer
+      cursor.style.top = `${event.clientY - 10}px`;
+    };
+
+    const handleMouseLeave = () => {
+      cursor.style.width = '20px'; // Reset size
+      cursor.style.height = '20px';
+      cursor.style.opacity = '0.5'; // Reset opacity
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
+
   return (
     <div className="about-container">
       <div className="profile">
@@ -28,14 +54,10 @@ const About = () => {
         <div className="interest-grid">
           <div className="interest-item">Software Development</div>
           <div className="interest-item">Machine Learning</div>
-          <div className="interest-item">Computer Vision</div>
-          <div className="interest-item">Natural Language Processing</div>
-          <div className="interest-item">Software Engineering</div>
-          <div className="interest-item">Visualization</div>
-          <div className="interest-item">Algorithms</div>
-          <div className="interest-item">Image Processing</div>
+          <div className="interest-item">Artificial intelligence</div>
         </div>
       </div>
+      <div ref={cursorRef} className="cursor"></div>
     </div>
   );
 }
