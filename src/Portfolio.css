@@ -1,7 +1,7 @@
 body {
   margin-top: 10px; /* Adjusted margin */
   padding: 0; /* Remove default padding */
-  background-image: url('/home/indrajeetyadav/reactfolder/src/assets/teenager-dressed-white-t-shirt-using-virtual-reality-glasses-with-graph-charts-numbers-lines-technology-concept.jpg'); /* Background image */
+  background-image: url('./assets/hero-background.jpg'); /* Background image */
   background-size: cover; /* Cover the entire background */
   background-position: center 20px; /* Center the background */
   background-repeat: no-repeat; /* Prevent repeating the background */
