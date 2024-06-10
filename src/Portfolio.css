@@ -5,8 +5,6 @@ body {
   background-size: cover; /* Cover the entire background */
   background-position: center 20px; /* Center the background */
   background-repeat: no-repeat; /* Prevent repeating the background */
-  height: 90vh; /* Full height of the viewport */
-  overflow: hidden; /* Hide overflow to prevent scrollbars during animations */
 }
 
 .div {

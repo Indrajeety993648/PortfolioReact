@@ -17,7 +17,7 @@
   padding-bottom: 20px;
   margin-bottom: 30px;
   font-size: 70px;
-  color: rgba(255, 255, 255, 0.9); 
+  color: rgba(255, 255, 255, 0.8); 
   text-transform: uppercase;
   letter-spacing: 2px;
   box-shadow: 0 0 20px rgba(93, 0, 255, 0.333); 
@@ -25,10 +25,17 @@
 
 .skills-category {
   margin-bottom: 10px;
-  background: linear-gradient(to right, rgba(51, 255, 0, 0.5), rgba(200, 249, 78, 0.3), rgba(255, 140, 0, 0.9), rgba(223, 78, 249, 0.5), rgba(255, 122, 0, 0.9)); /* Adjust the alpha value (0.5 in this case) to control transparency */
+  background-color: #00000033;
   padding: 20px;
+  border: 1px solid #ffffff33;
   border-radius: 40px;
-  box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);  
+  box-shadow: 0 0 20px #00000055;  
+}
+
+.skill-item span {
+  color: #ffffffcc!important;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 
@@ -36,10 +43,11 @@
 .skills-category h2 {
   font-size: 38px;
   margin-bottom: 20px;
-  background: black;
+  color: #ffffffcc;
+  /* background: black;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-bottom: 2px solid #000000;
+  -webkit-text-fill-color: transparent; */
+  border-bottom: 1px solid #ffffff33;
   padding-bottom: 10px;
 }
 
