@@ -23,17 +23,17 @@ function Portfolio() {
                 />
             </div>
             <div className='Image'>
-                <a href="https:/www.linkedin.com/in/indrajeet-yadav-5619b8283" id='insta'>
+                <a href="https://www.linkedin.com/in/siddharth-baleja-197805294/" id='insta'>
                     <img src={Linked} alt="Instagram" style={{ height: '50px', width: '50px' }} />
                 </a>
                 <a href="https://www.google.com" id='google'>
                     <img src={Google} alt="Google" style={{ height: '50px', width: '50px' }} />
                 </a>
-                <a href="https://github.com/Indrajeety993648/PortfolioReact" id='Github'>
+                <a href="https://github.com/siddharthbaleja7" id='Github'>
                     <img src={GitHub} alt="GitHub" style={{ height: '50px', width: '50px' }} />
                 </a>
             </div>
         </div>
     );
 }
-export default Portfolio; 
+export default Portfolio;
