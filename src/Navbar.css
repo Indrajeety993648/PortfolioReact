@@ -2,25 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0d1930;
-  
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-name {
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-left: 1em;
+  margin-left: 2.5em;
+}
+.navbar-name:hover{
+  color: #e2ff08;
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
   gap: 1rem;
-  justify-content: center;
-  margin: 0;
+  font-weight: bold;
+  font-size: 5%;
+  justify-content: right;
+  margin-right: 50px;
   padding: 0;
-  flex-grow: 1; 
+  flex-grow: 1;
+  margin-left: auto; /* Align to the right corner */
 }
 
 .navbar-links li {
@@ -28,7 +33,7 @@
 }
 
 .navbar-links a {
-  color: #ceb7b7;
+  color: #f0ecec;
   font-size: large;
   text-decoration: none;
 }
@@ -36,20 +41,17 @@
 .nav-item a::after {
   content: "";
   display: block;
-  width:0 ;
+  width: 0;
   height: 2px;
   background: #e2ff08;
   transition: width 0.5s;
-  
 }
-.nav-item a:hover::after{
-  width: 100%;
 
-  
+.nav-item a:hover::after {
+  width: 100%;
 }
-.nav-item a:hover{
+
+.nav-item a:hover {
   transform: scale(1.1);
   color: #fff;
-
-  
 }

@@ -3,14 +3,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 50px;
   color: whitesmoke;
-  background-color: #030303;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(3, 3, 3, 0.5); /* Adjust the alpha value (0.8 in this case) to control transparency */
+  box-shadow: 
+    5px 5px 20px rgba(73, 2, 73, 0.5),    
+    -5px -5px 20px rgba(158, 58, 11, 0.5),  
+    7px -7px 20px rgba(63, 11, 158, 0.5); 
   width: 90%; 
   max-width: 1000px; 
   margin: auto; 
-  margin-top: 60px; /* Add margin from the top */
+  margin-top: 100px; /* Add margin from the top */
 }
 
 
@@ -21,7 +24,7 @@
 }
 
 .profile-image {
-  border-radius: 50%;
+  border-radius: 10%;
   width: 300px;
   height: 500px;
   object-fit: cover;
@@ -59,43 +62,6 @@
 
 .profile-details ul li {
   margin: 15px 0; /* Increased margin for better spacing */
-}
-
-.interests {
-  margin-top: 60px; /* Reduced margin for better spacing */
-  text-align: center; /* Center-align interests */
-}
-
-.interests h2 {
-  font-size: 2.4em;
-  margin-bottom: 20px; /* Increased margin for better spacing */
-  background: linear-gradient(to right, #f0f94e, #ff5500, #f64ef9, #5eff00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.interest-grid {
-  display: flex; /* Change from grid to flex */
-  flex-wrap: wrap; /* Ensure items wrap to next row */
-  justify-content: center; /* Center-align items horizontally */
-  gap: 20px; /* Increased gap for better spacing */
-}
-
-.interest-item {
-  background: rgb(175, 41, 41);
-  padding: 20px;
-  border-radius: 20px;
-  width: 150px;  
-  height: 150px; /* Adjusted height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2em; /* Adjusted font size */
-  color: whitesmoke;
-  transition: transform 0.3s ease-in-out; 
-}
-.interest-item:hover{
-  transform: scale(1.05); /* Slightly reduce scale on hover */
 }
 
 

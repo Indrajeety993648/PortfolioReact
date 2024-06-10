@@ -1,56 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import github from './assets/github.png';
-import LinkedIn from './assets/linkdn.png';
-import Google from './assets/google.png';
 import './Contact.css';
 
 function Contact() {
-    const emailAddress = 'indrajeetyadav993648@gmail.com';
-
     return (
-        <div>
-            <h2 id='h22'> Contact</h2>
-            <div className="Contacts">
-                <ul className="Contact1">
-                    <div className='locate'>
-                        <h3 id='h3'>My Address</h3>
-                    </div>
-                    <div className='li'>
-                        <li>Electronic City-Phase1</li>
-                        <li>Karnataka</li>
-                        <li>India</li>
-                    </div>
-                </ul>
-                <ul className="Contact2">
-                    <div className='Social'>
-                        <h3 id='h4'>Social Profiles</h3>
-                    </div>
-                    <div className='img'>
-                        <a href='https://github.com/siddharthbaleja7'>
-                            <img src={github} alt="GitHub" id='git'/>
+        <div className="contact-container">
+            
+            <div className="contact-right">
+                <h1 className="contact-title">
+                    Contact <span className="highlight">Me</span>
+                </h1>
+                <form className="contact-form">
+                    <input type="text" placeholder="FULL NAME" className="contact-input" />
+                    <input type="email" placeholder="EMAIL" className="contact-input" />
+                    <textarea placeholder="Message" className="contact-textarea"></textarea>
+                    <button type="submit" className="contact-button">Send Message</button>
+                </form>
+                <div className="contact-info">
+                    <p>
+                        <a href="mailto:indrajeetyadav993648@gmail.com" className="contact-email">
+                            📧 indrajeetyadav993648@gmail.com
                         </a>
-                        <a href='https://www.linkedin.com/in/siddharth-baleja-197805294/'>
-                            <img src={LinkedIn} alt="LinkedIn" id='Linked'/>
+                        <br />
+                        <a href="tel:+9569025066" className="contact-phone">
+                            📞 +91 9569025066
                         </a>
-                        <a href='https://www.google.com'>
-                            <img src={Google} alt="Google" id='Google' />
+                    </p>
+                    <div className="contact-icons">
+                        {}
+                        <a href="https://github.com/Indrajeety993648" className="contact-icon">
+                            <img src={require('./assets/github3.png')} alt="GitHub" />
+                        </a>
+                        <a href="https://google.com" className="contact-icon">
+                            <img src={require('./assets/google1.png')} alt="Google" />
                         </a>
                     </div>
-                </ul>
-            </div>
-            <div className='Contacts1'>
-                <div className='Contact3'>
-                    <div className='lii'>
-                        <li id='liii'>{emailAddress}</li>
-                        <li>indrajeetyadav@asu.edu</li>
-                    </div>
-                </div>
-                <div className='Contact4'>
-                    <div className='contact'>
-                        <h3 id='h4'>Contact</h3>
-                    </div>
-                    <li id='contact'>+91 9569025066</li>
                 </div>
             </div>
         </div>

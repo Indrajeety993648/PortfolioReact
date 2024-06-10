@@ -49,14 +49,6 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className="interests">
-        <h2>Interests</h2>
-        <div className="interest-grid">
-          <div className="interest-item">Software Development</div>
-          <div className="interest-item">Machine Learning</div>
-          <div className="interest-item">Artificial intelligence</div>
-        </div>
-      </div>
       <div ref={cursorRef} className="cursor"></div>
     </div>
   );

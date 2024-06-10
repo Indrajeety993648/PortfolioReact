@@ -1,105 +1,91 @@
-.Contact1{
-  height: 150px;
-  width: 30rem;
-  padding-top: 25px;
-  margin-left: 15rem;
-  list-style-type: none;
-  background-color: #09203a;
-  text-decoration: none;
-}
-.Contacts{
-  display: flex;
-}
-.Contacts1{
-  display: flex
-}
-.Contact1:hover,.Contact2:hover,.Contact3:hover,.Contact4:hover {
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1), 0 6px 20px rgba(135, 206, 235, 0.2);
-  transform: scale(1.05); /* Slightly scale up the box */
-}
-.Contact2{
-  height: 150px;
-  width: 30rem;
-  padding-top: 25px;
-  margin-left: 5rem;
-  list-style-type: none;
-  background-color: #09203a;
-  text-decoration: none;
-}
-#h3{
-  color: greenyellow;
-  margin-left: 24px;
-}
-#location{
-  height: 30px;
-  width: 30px;
-  margin-top: 13px;
-}
-#email,#phone{
-  height: 30px;
-  width: 30px;
-  padding-left: 35px;
-  margin-top: 14px;
-}
-#social{
-  height: 30px;
-  width: 30px;
-  margin-top: 14px;
-}
-.email,.contact,.Social{
-  display: flex;
-}
-.locate{
-  display: flex;
-}
-.li{
-  margin-left: 3.2rem;
-}
-.lii{
-  margin-left: 5.2rem;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
 }
 
-.Contact3{
-  height: 150px;
-  width: 32.4rem;
-  padding-top: 25px;
-  margin-left: 15rem;
-  list-style-type: none;
-  background-color: #09203a;
+.contact-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+.contact-right {
+  flex: 1;
+  padding: 20px;
+  background-color: #181818;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #7f5af0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input, .contact-textarea {
+  background-color: #262626;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-button {
+  background-color: #7f5af0;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.contact-email, .contact-phone {
+  color: #7f5af0;
   text-decoration: none;
 }
-.Contact4{
-      height: 150px;
-      width: 32.4rem;
-      padding-top: 25px;
-      margin-left: 5rem;
-      list-style-type: none;
-      background-color: #09203a;
-      text-decoration: none;
+
+.contact-icons {
+  margin-top: 20px;
 }
-#h4{
-  color: greenyellow;
-  margin-left: 24px;
+
+.contact-icon {
+  margin: 0 10px;
 }
-#liii {
-  margin-bottom: 10px; 
-}
-#contact{
-  margin-left: 5.3rem;
-}
-#git{
-  height: 35px;
-  width: 40px;
-  margin-left: -13rem;
-}
-#Linked{
-  height: 35px;
-  width: 40px;
-  margin-left: 2rem;
-}
-#Google{
-  height: 35px;
-  width: 40px;
-  color: white;
-  margin-left: 2rem;
+
+.contact-icon img {
+  width: 30px;
+  height: 30px;
 }

@@ -3,18 +3,14 @@ import './Projects.css';
 import yulu from './assets/yuluProject.png';
 import aerofit from './assets/Aerofit.jpg';
 import movie from './assets/movie.jpeg';
-import webscrapper from './assets/webscraper.jpg';
+import webscraper from './assets/webscraper.jpg';
 import aptiquiz from './assets/aptiquiz.jpeg';
-import music from './assets/music.png'
-
 
 const projects = [
-  { title: 'Yulu', imgSrc: yulu },
-  { title: 'Aerofit', imgSrc:aerofit},
-  { title: 'AptiQuiz', imgSrc: aptiquiz },
-  { title: 'Music Streaming Website', imgSrc: music},
-  { title: 'Movie Recommender', imgSrc: movie },
-  { title: 'Youtube Web Scrapper', imgSrc: webscrapper },
+  { title: 'Yulu', imgSrc: yulu, githubLink: 'https://github.com/Indrajeety993648/Yulu-Project' },
+  { title: 'Aerofit', imgSrc: aerofit, githubLink: 'https://github.com/Indrajeety993648/mentorship-project1' },
+  { title: 'AptiQuiz', imgSrc: aptiquiz, githubLink: 'https://github.com/Indrajeety993648/Quiz---App' },
+  { title: 'Youtube Web Scrapper', imgSrc: webscraper, githubLink: 'https://github.com/Indrajeety993648/youtube-Web-Scrapping-' },
 ];
 
 const Projects = () => {
@@ -26,10 +22,12 @@ const Projects = () => {
       </div>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <img src={project.imgSrc} alt={project.title} className="project-image" />
-            <div className="project-title">{project.title}</div>
-          </div>
+          <a key={index} href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
+            <div className="project-card">
+              <img src={project.imgSrc} alt={project.title} className="project-image" />
+              <div className="project-title">{project.title}</div>
+            </div>
+          </a>
         ))}
       </div>
     </div>
